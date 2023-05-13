@@ -2,6 +2,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeSet;
 
 /**
@@ -40,7 +42,7 @@ public class Dictionary {
         {
             e.printStackTrace();
         }
-        System.out.println("Initialized " + wordcount + " words in the Dictionary.");;
+        System.out.println("Initialized " + wordcount + " words in the Dictionary.");
     }
 
     /*
@@ -59,4 +61,12 @@ public class Dictionary {
         return false;
     }
 
+    public TreeSet<String> getLegalWords() {
+        return legalWords;
+    }
+
+    public String getWord(int i){
+        List<String> list= new ArrayList<String>(this.legalWords);
+        return list.get(i);
+    }
 }

@@ -92,7 +92,7 @@ public class Game {
 
     /**
      * Compared the random word chosen and compares how well the user guessed the word.
-     * Checks each spot of the word and gives an output that shows the user what they
+     * Checks each spot of the word and gives an output that shows the user which
      * letters they got right and which they got wrong.
      * @param word The word chosen from the dictionary.
      * @param userWord This is the word given by the user.

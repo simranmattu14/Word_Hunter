@@ -25,6 +25,7 @@ public class Game {
         System.out.println("You will get points based on the number guesses it takes you.\n");
 
         //TODO: Tell the user that if they hit enter without typing then it ends the round
+        // TODO: Ask the user what level they want to play at. Easy, Medium, High
 
         //Ask the user if they're ready to start
         System.out.println("Hit enter when you are ready to play.");
@@ -86,10 +87,10 @@ public class Game {
             System.out.println("Nope! Guess again!");
             userWord = userInput();
         }
-        WinRound();
+        winRound();
     }
 
-    private void WinRound(){
+    private void winRound(){
         System.out.println("You got it right!");
         //TODO: Tell the user how many point they get
     }
